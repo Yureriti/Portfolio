@@ -1,4 +1,4 @@
-const typewriterText = ["designer", "intern"];
+const typewriterText = ["designer", "intern", "developer"];
 let currentText = 0;
 let letterCount = 0;
 let typingForward = true;
@@ -96,24 +96,42 @@ document.querySelectorAll('.link').forEach(link => {
   });
   
 
+
+
+
+
+
+
+
   const themeToggle = document.getElementById('darkModeToggle');
+  const resumeLink = document.getElementById('resumeLink');
 
   themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        resumeLink.href = "images/YURI CHOI - Resume.pdf";
+      } else {
+        resumeLink.href = "images/YURI_CHOI Resume (1).pdf";
+      }
     const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
     localStorage.setItem('theme', theme);
   });
   
-  // Apply saved theme on page load
+  
   document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
       document.body.classList.add('dark-mode');
+      resumeLink.href = "images/YURI CHOI - Resume.pdf";
+
     } else {
       document.body.classList.remove('dark-mode');
+      resumeLink.href = "images/YURI_CHOI Resume (1).pdf";
+
     }
   });
   
+
 
 
 // const themeToggle = document.getElementById('darkModeToggle');
@@ -163,3 +181,4 @@ document.querySelectorAll('.link').forEach(link => {
 //     }, 3000); // The delay in milliseconds (3000ms = 3 seconds)
 // });
   
+
