@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio website</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" id="picoStyleSheet"/>
+    
+    <link rel="stylesheet" href="css/index.css" id="lightModeStylesheet"/>
+    <link rel="stylesheet alternate" href="css/dark_mode.css" id="darkModeStylesheet" disabled>
+    
+  </head>
+
+
+
+  
+  <body>
+    
+    <header class="container" style="padding-top:2px;">
+        <nav> 
+            <ul>
+                <img src="images/portfolio_logo.svg" alt="Logo" style="height: 110px; vertical-align: middle; margin-right:-10px;">
+                <li><strong class="logo_name";>유리</strong></li>
+            </ul>
+            <ul>
+                <li><a class = "link" href="#">about</a></li>
+                <li><a class = "link" href="#">projects</a></li>
+                <li><a class = "link" href="#">hire me ;)</a></li>
+            </ul>
+        </nav>
+        
+        <div class="intro-text">
+            <p>Hey shmeeoples!</p>
+            <h1><span class="italic">i'm</span> YURI, <button id="darkModeToggle"><img src="images/light_switch.png" alt="Dark Mode" class="light_switch"></button></h1>
+            <h2><span class="italic">your</span> <span class="regular">newest</span></h2>
+            <h1><span id="typewriter" class="typewrite-text">designer</span><span id="cursor"></span></h1>
+        </div>
+
+        <div class="icon-bar">
+            <a href="#" onclick="copyEmail();" title="Email">
+                <img src="images/mail.png" alt="Email" class="icon">
+            </a>
+            <a href="#" onclick="copyPhoneNumber();" title="Phone Number">
+                <img src="images/telephone.png" alt="Phone" class="icon">
+            </a>
+            <a href="https://www.linkedin.com/in/yurichoiprofile" target="_blank" title="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="images/YURI_CHOI Resume (1).pdf" target="_blank" title="Resume">
+                <img src="images/resume.png" alt="Resume" class="icon">
+            </a>
+        </div>
+
+        <div id="copyNotification" class="copy-notification">phone number copied!</div>
+        <div id="copyNotificationEmail" class="copy-notification">email copied!</div>
+
+    </header>
+
+
+
+
+
+
+    
+    <!-- typewriter animation -->
+    <script src="scripts/index.js"></script>    
+    
+    <script src="js/minimal-theme-switcher.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
