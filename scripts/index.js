@@ -96,16 +96,70 @@ document.querySelectorAll('.link').forEach(link => {
   });
   
 
-  document.getElementById('darkModeToggle').addEventListener('click', function() {
-    var darkModeStylesheet = document.getElementById('darkModeStylesheet');
-    var lightModeStylesheet = document.getElementById('lightModeStylesheet');
-    var picoStyleSheet = document.getElementById('picoStyleSheet');
-    if (darkModeStylesheet.disabled) {
-        darkModeStylesheet.disabled = false;
-        lightModeStylesheet.disabled = true;
+  const themeToggle = document.getElementById('darkModeToggle');
 
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+  
+  // Apply saved theme on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
     } else {
-        darkModeStylesheet.disabled = true;
-        lightModeStylesheet.disabled = false;
+      document.body.classList.remove('dark-mode');
     }
-});
+  });
+  
+
+
+// const themeToggle = document.getElementById('darkModeToggle');
+// const lightModeStylesheet = document.getElementById('lightModeStylesheet');
+// const darkModeStylesheet = document.getElementById('darkModeStylesheet');
+
+// themeToggle.addEventListener('click', () => {
+// if (darkModeStylesheet.disabled) {
+//     darkModeStylesheet.disabled = false;
+//     lightModeStylesheet.disabled = true;
+//     localStorage.setItem('theme', 'dark');
+// } else {
+//     darkModeStylesheet.disabled = true;
+//     lightModeStylesheet.disabled = false;
+//     localStorage.setItem('theme', 'light');
+// }
+// });
+
+// //saved user preference on page load
+// document.addEventListener('DOMContentLoaded', () => {
+// const savedTheme = localStorage.getItem('theme');
+// if (savedTheme === 'dark') {
+//     darkModeStylesheet.disabled = false;
+//     lightModeStylesheet.disabled = true;
+// } else {
+//     darkModeStylesheet.disabled = true;
+//     lightModeStylesheet.disabled = false;
+// }
+// });
+
+
+// loading screen!
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     setTimeout(function() {
+//     var loadingScreen = document.getElementById('loadingScreen');
+//     loadingScreen.style.opacity = '0';
+//     loadingScreen.style.visibility = 'hidden';
+//     }, 1000); 
+// });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     setTimeout(function() {
+//       var loadingScreen = document.getElementById('loadd');
+//       loadingScreen.style.opacity = '0';
+//       loadingScreen.style.visibility = 'hidden';
+//     }, 3000); // The delay in milliseconds (3000ms = 3 seconds)
+// });
+  

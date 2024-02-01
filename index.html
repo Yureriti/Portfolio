@@ -4,14 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio website</title>
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="./images/favicon_light.ico" />
 
 
     <!-- Pico.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" id="picoStyleSheet"/>
     
     <link rel="stylesheet" href="css/index.css" id="lightModeStylesheet"/>
-    <link rel="stylesheet alternate" href="css/dark_mode.css" id="darkModeStylesheet" disabled>
+    <!-- <link rel="stylesheet" href="css/dark_mode.css" id="darkModeStylesheet"/> -->
+    
     
   </head>
 
@@ -19,22 +20,27 @@
 
   
   <body>
+
+    <!-- loading screen -->
+    <!-- <div id="loadingScreen" class="loading-screen">
+    <div class="loader"></div>
+    </div> -->
     
     <header class="container" style="padding-top:2px;">
         <nav> 
             <ul>
-                <img src="images/portfolio_logo.svg" alt="Logo" style="height: 110px; vertical-align: middle; margin-right:-10px;">
+                <img src="images/portfolio_logo.svg" class="logotopright" alt="Logo" style="height: 110px; vertical-align: middle; margin-right:-10px;">
                 <li><strong class="logo_name";>유리</strong></li>
             </ul>
-            <ul>
+            <!-- <ul>
                 <li><a class = "link" href="#">about</a></li>
                 <li><a class = "link" href="#">projects</a></li>
                 <li><a class = "link" href="#">hire me ;)</a></li>
-            </ul>
+            </ul> -->
         </nav>
         
         <div class="intro-text">
-            <p>Hey shmeeoples!</p>
+            <p>Hey there!</p>
             <h1><span class="italic">i'm</span> YURI, <button id="darkModeToggle"><img src="images/light_switch.png" alt="Dark Mode" class="light_switch"></button></h1>
             <h2><span class="italic">your</span> <span class="regular">newest</span></h2>
             <h1><span id="typewriter" class="typewrite-text">designer</span><span id="cursor"></span></h1>
@@ -60,12 +66,8 @@
 
     </header>
 
-
-
-
-
-
-    
+         
+  
     <!-- typewriter animation -->
     <script src="scripts/index.js"></script>    
     
