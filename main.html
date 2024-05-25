@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yureka!</title>
+  <link rel="shortcut icon" href="./images/favicon_light.ico" />
+  <link rel="stylesheet" href="css/index.css" id="lightModeStylesheet"/>
+  <link rel="stylesheet" href="css/main.css" id="lightModeStylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    
+    
+    <header>
+        <div class="background--custom">
+            <div id="trailer">
+                <div id="filterOverlay"></div>
+           </div>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <img src="images/girl.png" alt="Yuri Choi" class="center-image">
+
+        <div class="info-layer">
+        <!-- <div class="grain"></div> -->
+            <div class="top-left" id="top"> 최유리</div>
+            <div class="bottom-right" id="bottom">Time</div>
+        </div>
+    </header>
+
+
+
+    
+    <section class="display-image">
+        
+        <div class="container">
+            <!-- <p class="hero glitch layers" data-text="an experimental designer with a strong interest in visual identity.">an experimental designer with a strong interest in visual identity.</p> -->
+            <p class="page-text">an experimental designer with a strong interest in visual identity.</p>
+        </div>
+            
+        <div class="tv-frame-container">
+            <img src="images/tvframe.png" alt="TV Frame" class="tv-frame">
+            <div class="tv-container">
+                <img src="images/static.gif" alt="Background" class="tv-background">
+                <div class="content-wrapper">
+                    <a href="pages/terraa.html" class="image-link draggable">
+                        <img src="images/macfolder.png" alt="Project 1" class="folder-image" >
+                        <p class="subtext">terraa</p></a>
+                    <a href="pages/rec.html" class="image-link draggable" >
+                        <img src="images/macfolder.png" alt="Project 2" class="folder-image">
+                        <p class="subtext">mit_rec</p></a>
+                    <a href="pages/familiar.html" class="image-link draggable" >
+                        <img src="images/macfolder.png" alt="Project 3" class="folder-image">
+                        <p class="subtext">familiar_strangers</p></a>
+                    <a href="pages/homemade.html" class="image-link draggable" >
+                        <img src="images/macfolder.png" alt="Project 3" class="folder-image">
+                        <p class="subtext">homemade</p></a>
+                    <a href="pages/girlstem.html" class="image-link draggable" >
+                        <img src="images/macfolder.png" alt="Project 3" class="folder-image">
+                        <p class="subtext">girlsteminist</p></a>
+                    <a href="pages/identity.html" class="image-link draggable" >
+                        <img src="images/macfolder.png" alt="Project 3" class="folder-image">
+                        <p class="subtext">collective_identity</p></a>
+                    <a href="pages/portfolio.html" class="image-link draggable" >
+                        <img src="images/macfolder.png" alt="Project 3" class="folder-image">
+                        <p class="subtext">portfolio</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+  <script src="scripts/main.js"></script>   
+  <!-- <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+  <script>
+    var gradient = new Gradient();
+    gradient.initGradient("#canvas");
+  </script> -->
+
+
+  <footer class="site-footer">
+    <div class="contact-info">
+        <a href="#" onclick="copyEmail(event);" title="Email">
+            <img src="images/mail.png" alt="Email" class="icon">
+        </a>
+        <a href="#" onclick="copyPhoneNumber(event);" title="Phone Number">
+            <img src="images/telephone.png" alt="Phone" class="icon">
+        </a>
+        <a href="https://www.linkedin.com/in/yurichoiprofile" target="_blank" title="LinkedIn">
+            <img src="images/linkedin.png" alt="LinkedIn" class="icon">
+        </a>
+        <a href="images/Choi, Yuri Resume (2).pdf" target="_blank" id="resumeLink" title="Resume">
+            <img src="images/resume.png" alt="Resume" class="icon">
+        </a>
+    </div>
+    <div id="copyNotification" class="copy-notification">phone number copied!</div>
+    <div id="copyNotificationEmail" class="copy-notification">email copied!</div>
+</footer>
+
+</body>
+
+
+</html>
+

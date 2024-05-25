@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap");
 
 :root {
@@ -15,8 +16,38 @@ body {
 h1, h2, h3, h4, h5, h6, .heading {
     font-family: var(--fontFamily2);
     color: #262323 !important;
+=======
+
+
+:root {
+    --background-color: #F0EDEE; /* A softer, warmer background for a more cohesive look */
+    --text-color: #333D47; /* A dark gray that reduces harshness compared to pure black */
+    --accent-color: #DAA49A; /* A complementary accent color for elements like links and buttons */
+    --border-radius: 8px; /* Rounded corners for a modern, friendly appearance */
+    --form-element-spacing-vertical: 0.75rem; /* Adjusted for better vertical rhythm */
+    --form-element-spacing-horizontal: 1rem; /* Consistent horizontal spacing */
+    --link-hover-color: #e06666;
+    --get-background:#17171f;
+    --get-text:#E0E1DD
 }
 
+
+
+
+
+h1, h2, h3, h4, h5, h6, .heading {
+    font-family: var(--fontFamily2);
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: var(--text-color) !important;
+>>>>>>> Stashed changes
+}
+h1 {
+    padding-top: 4vw;
+    font-size: 2.25rem; /* Larger for primary headings */
+}
+
+<<<<<<< Updated upstream
 .container {
     position: relative;
     padding-top: 20px;
@@ -154,9 +185,43 @@ a.link {
     padding: 10px;
     border-radius: 5px;
     z-index: 1000;
-    opacity: 0; 
-    transition: opacity 0.5s ease-in-out; 
+=======
+h3 {
+    font-size: 2.25rem; /* Larger for primary headings */
 }
+
+
+h2 {
+    font-size: 1.75rem; /* Distinct size for secondary headings */
+}
+
+
+.fade-in-slide-up {
+    opacity: 0;
+    transform: translateY(200px); /* Increase the Y-axis translation */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+  }
+
+  .fade-in-slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+
+
+.fade-out-slide-up {
+    transition: transform 0.8s ease-out, opacity 0.6s ease-out;
+    opacity: 1; 
+    
+}
+
+.fading-out {
+>>>>>>> Stashed changes
+    opacity: 0; 
+}
+<<<<<<< Updated upstream
 
 .light_switch{
     height:80px;
@@ -196,3 +261,5 @@ h1 button#darkModeToggle {
         width: 18px;
     }
 }
+=======
+>>>>>>> Stashed changes

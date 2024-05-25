@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yureka! Blog</title>
+    <link rel="shortcut icon" href="./images/favicon_light.ico" />
+
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" id="picoStyleSheet"/>
+    
+    <link rel="stylesheet" href="css/index.css" id="lightModeStylesheet"/>
+    <link rel="stylesheet" href="css/blog.css" id="Stylesheet"/>
+    <!-- <link rel="stylesheet" href="css/dark_mode.css" id="darkModeStylesheet"/> -->
+    
+    
+  </head>
+
+
+
+  
+  <body>
+
+      <script>
+        document.getElementById('confirmButton').addEventListener('click', function() {
+          document.querySelector('dialog').close();
+        });
+      </script>
+
+
+      <style>
+        #confirmButton {
+            position: absolute;
+            bottom: 60px; 
+            right: 60px;   
+            border-radius: 10px;
+        }
+        #confirmButton:hover {
+            background-color: #982f2f; /* Darker shade on hover */
+            border-color: #982f2f;
+            color: #fff; /* Optional: Change text color on hover */
+            }
+      </style>
+      
+
+
+    <header class="container" style="padding-top:2px; padding-bottom: 20px;">
+        <nav> 
+            <ul>
+                <a href="index.html">
+                    <img src="images/portfolio_logo.svg" class="logotopright" alt="Logo" style="height: 110px; vertical-align: middle; margin-right:-10px;">
+                  </a>
+                  <li><strong class="logo_name";>유리</strong></li>
+            </ul>
+
+        </nav>
+        
+    
+    </header>
+
+    <main class="blog-content" style="padding:16vw; padding-top:0;">
+        <h1 class="blog-title" style="padding-top: 0;">TERRAA</h1> 
+        
+        <img src="images/terraa1.png" alt="Descriptive text for image" class="blog-image">
+        
+        <!-- <p class="blog">More text continues after the first image...</p> -->
+      </main>
+
+    
+
+  
+      
+    <script src="scripts/index.js"></script>        
+    <script src="js/minimal-theme-switcher.js"></script>
+    <script src="js/modal.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          // Function to apply the theme based on the theme name
+          function applyTheme(theme) {
+            if (theme === 'dark') {
+              document.body.classList.add('dark-mode');
+              if (document.getElementById('resumeLink')) { 
+                document.getElementById('resumeLink').href = "images/YURI CHOI - Resume.pdf";
+              }
+            } else {
+              document.body.classList.remove('dark-mode');
+              if (document.getElementById('resumeLink')) { 
+                document.getElementById('resumeLink').href = "images/YURI_CHOI Resume (1).pdf";
+              }
+            }
+          }
+        
+          const savedTheme = localStorage.getItem('theme');
+          applyTheme(savedTheme);
+        });
+        </script>
+        
+
+  </body>
+</html>

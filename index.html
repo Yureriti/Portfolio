@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+<<<<<<< Updated upstream
     <title>Portfolio website</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
 
 
+=======
+    <title>Yureka!</title>
+    <link rel="shortcut icon" href="./images/favicon_light.ico" />
+>>>>>>> Stashed changes
     <!-- Pico.css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" id="picoStyleSheet"/>
     
@@ -19,10 +24,67 @@
 
   
   <body>
+<<<<<<< Updated upstream
     
+=======
+
+    <dialog open id="myDialog">
+      <article class="dialog-content">
+          <h4>Wait!</h4>
+          <p>
+            This website is under construction. <br>
+            For now, check out this placeholder page with my contact info! ;D
+          </p>
+          <p class="secret" style="padding-left: 20px;">
+            Psst! Here's a secret: There's two *stylized* versions of my resume!
+          </p>
+      </article>
+  </dialog>
+  
+
+  <script>
+    const dialog = document.getElementById('myDialog');
+    window.addEventListener('click', function(event) {
+      if (event.target == dialog) {
+        dialog.close();
+      }
+    });
+  </script>
+  
+  
+
+      <script>
+        document.getElementById('confirmButton').addEventListener('click', function() {
+          document.querySelector('dialog').close();
+        });
+      </script>
+
+      <style>
+        #confirmButton {
+            /* position: absolute; border-radius: 10px; background-color: #e06666; border-color: #e06666; margin-top:25px; margin-left:50vw;  */
+            position: absolute;
+            bottom: 60px; 
+            right: 60px;   
+            border-radius: 10px;
+        }
+        #confirmButton:hover {
+            background-color: #982f2f; /* Darker shade on hover */
+            border-color: #982f2f;
+            color: #fff; /* Optional: Change text color on hover */
+            }
+      </style>
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
     <header class="container" style="padding-top:2px;">
-        <nav> 
+        <nav class="fade-out-slide-up"> 
             <ul>
+<<<<<<< Updated upstream
                 <img src="images/portfolio_logo.svg" alt="Logo" style="height: 110px; vertical-align: middle; margin-right:-10px;">
                 <li><strong class="logo_name";>유리</strong></li>
             </ul>
@@ -38,9 +100,28 @@
             <h1><span class="italic">i'm</span> YURI, <button id="darkModeToggle"><img src="images/light_switch.png" alt="Dark Mode" class="light_switch"></button></h1>
             <h2><span class="italic">your</span> <span class="regular">newest</span></h2>
             <h1><span id="typewriter" class="typewrite-text">designer</span><span id="cursor"></span></h1>
+=======
+              <a href="index.html">
+                <img src="images/portfolio_logo.svg" class="logotopright" alt="Logo" style="height: 110px; vertical-align: middle; margin-right:-10px;">
+              </a>
+              <!-- <li><strong class="logo_name";>유리</strong></li> -->
+            </ul>
+            <ul>
+                <li><a class="link" href="#" id="hireMeButton">hire me ;)</a></li>
+                <div id="confetti-wrapper"></div>
+            </ul>
+      
+        </nav>
+        
+        <div class="intro-text fade-out-slide-up">
+            
+            <h1><span class="italic">i'm</span> <span class="hover-highlight-animation">YURI</span></h1>
+            <h2><span class="italic">your</span> <span class="regular word-jump">newest</span></h2>
+            
+>>>>>>> Stashed changes
         </div>
 
-        <div class="icon-bar">
+        <div class="icon-bar fade-out-slide-up">
             <a href="#" onclick="copyEmail();" title="Email">
                 <img src="images/mail.png" alt="Email" class="icon">
             </a>
@@ -60,16 +141,69 @@
 
     </header>
 
+<<<<<<< Updated upstream
 
 
 
 
 
     
+=======
+         
+
+
+      
+>>>>>>> Stashed changes
     <!-- typewriter animation -->
     <script src="scripts/index.js"></script>    
-    
     <script src="js/minimal-theme-switcher.js"></script>
     <script src="js/modal.js"></script>
+    
+
   </body>
+
 </html>
+
+
+
+
+
+
+
+    <section class="project-display" style="margin-top: 14vh;">
+      <div class="image-with-text fade-in-slide-up">
+        <a href="blog.html">
+          <img src="images/terraa1.png" alt="TERRAA Website Sample" class="project-image">
+        </a>
+        <div class="project-subtext">This is a sample of my work...</div>
+      </div>
+      <div class="title-and-date fade-in-slide-up">
+        <div class="project-title">TERRAA</div>
+        <div class="project-date">12.03.23</div>
+      </div>
+    </section>
+
+    <section class="project-display">
+      <div class="image-with-text fade-in-slide-up">
+        <img src="images/terraa1.png" alt="TERRAA Website Sample" class="project-image">
+        <div class="project-subtext">This is a sample of my work...</div>
+      </div>
+      <div class="title-and-date fade-in-slide-up">
+        <div class="project-title">TERRAA</div>
+        <div class="project-date">12.03.23</div>
+      </div>
+    </section>
+
+    <section class="project-display">
+      <div class="image-with-text fade-in-slide-up">
+        <a href="blog.html">
+          <img src="images/terraa1.png" alt="TERRAA Website Sample" class="project-image">
+        </a>
+        <div class="project-subtext">This is a sample of my work...</div>
+      </div>
+      <div class="title-and-date fade-in-slide-up">
+        <div class="project-title">TERRAA</div>
+        <div class="project-date">12.03.23</div>
+      </div>
+    </section>
+
